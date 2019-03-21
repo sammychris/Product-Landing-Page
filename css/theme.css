@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  font-family: Myriad Pro;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+header  {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  background: #0c0b11;
+  color: #fff;
+  z-index: 1;
+}
+
+header #headerLeft{
+  width: 20%;
+  display: flex;
+}
+
+header #nav-bar{
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+  font: normal 16px Myriad Pro;
+}
+
+header #nav-bar ul{
+  display: flex;
+  width: 50%;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+header #nav-bar ul li {
+  display: flex;
+  align-items: center;
+}
+
+header #nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+section#banner {
+  width: 100%;
+  margin-top:70px;
+  color: #fff;
+}
+
+section#banner form {
+  position:absolute;
+  width: 50%;
+  top:8vw;
+  right:5px;
+  text-align: left;
+  padding-top: 8vw;
+}
+
+section#banner form h2 {
+  line-height: 20px;
+  font-size: 2vw;
+  color:#000;
+}
+
+section#banner form input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #eee;
+  border-radius: 2px;
+}
+
+section#banner form #email {
+    width: 60%;
+}
+
+section#banner form #submit {
+  cursor: pointer;
+  border: 0;
+  font-weight: bold;
+  background-color:#0c0b11;
+  color: #fff;
+  border-radius: 5px;
+}
+
+section#banner form #submit:hover {
+  background: #f54029;
+}
+
+main {
+  margin: auto;
+  max-width: 1000px;
+}
+main .row {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+}
+
+main #Features {
+  padding-top: 70px;
+}
+
+main #Features ul {
+  padding: 0;
+}
+
+main #Features li {
+  padding-bottom: 30px;
+}
+
+main #Features .leftRow {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+main #Features .rightRow {
+  font-size: 17px;
+  width:80%;
+}
+
+main #Features .rightRow h2 {
+  color: #f54029;
+}
+
+main #Features .leftRow img{
+  width: 50%;
+  display: block;
+  height: auto;
+}
+
+main #How-It-Works{
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+main #Pricing {
+  padding: 60px 0;
+}
+
+main .thumbnails ul.row {
+  justify-content: space-between;
+}
+
+main .thumbnails .row .thumbnail {
+  border: 1px solid #0c0b11;
+  width: 300px;
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+main .thumbnails .row .thumbnail h3 {
+  margin:0;
+  width: 100%;
+  padding: 10px 0;
+  color:#000;
+  background-color: #dedede;
+}
+
+main .thumbnails .row .thumbnail .btn {
+  cursor: pointer;
+  border:0;
+  border-radius: 1px;
+  width: 200px;
+  font-size: 16px;
+  color:#fff;
+  background-color:#0c0b11;
+  padding: 15px;
+}
+
+main .thumbnails .row .thumbnail .btn:hover{
+  background-color: #f54029;
+}
+
+footer {
+  max-width: 100%;
+  padding: 5px;
+  background-color: #dedede;
+  border-top: 1px solid #cccbcb;
+}
+
+footer #footer-div {
+  width: 75%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+footer #footer-div nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer #footer-div nav ul{
+  display: flex;
+  width: 200px;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+footer #footer-div #copywrite {
+  display: flex;
+  justify-content: flex-end;
+  color:#f54029;
+}
+
+
+
+@media(max-width:750px){
+  section#banner form h2 {
+    font-size: 16px;
+  }
+
+  section#banner form input {
+    margin: 2px;
+  }
+}
+
+
+@media(max-width:670px){
+  main .thumbnails ul.row {
+    flex-direction: column;
+    align-items: center;
+    padding:50px 0;
+  }
+
+  main .thumbnails .row .thumbnail {
+    margin-top: 50px;
+  }
+}
+
+@media(max-width:590px){
+  header #headerLeft img{
+    width: 130%;
+    display: flex;
+  }
+  header #nav-bar {
+    justify-content: center;
+  }
+
+  header #nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  header #nav-bar ul li {
+    display: block;
+  }
+
+  section#banner form #email {
+    width: 60%;
+    margin: 0;
+  }
+}
+

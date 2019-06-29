@@ -1,3 +1,5 @@
 # Product-Landing-Page
-The is a FreeCodeCamp product landing page built by me, using css flexbox and media query for page responsiveness,
-for any type of device.
+Product Landing Page, FreeCodeCamp's projects with pure css and html while learning.
+Using css flexbox and media query for page responsiveness and for any type of device.
+
+[Demo](https://sammychris.github.io/Product-Landing-Page/)
